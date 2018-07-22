@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topLayout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <RelativeLayout
+        android:layout_width="447dp"
+        android:layout_height="match_parent"
+        android:id="@+id/cameraMother"
+        android:layout_alignParentTop="true">
+
+    <com.opsis.opsis2.ui.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.opsis.opsis2.ui.camera.GraphicOverlay
+            android:id="@+id/faceOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.opsis.opsis2.ui.camera.CameraSourcePreview>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/graphMother"
+    android:layout_toRightOf="@id/cameraMother">
+
+    <com.opsis.opsis2.ui.camera.MyRelativeViewHorizontal
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <com.opsis.opsis2.ui.camera.SquareImageViewHorizontal
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/circleGraph"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/circle"
+            />
+
+        <com.opsis.opsis2.ui.camera.CircleOverlay
+            android:id="@+id/circleOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </com.opsis.opsis2.ui.camera.MyRelativeViewHorizontal>
+
+        <CheckBox
+            android:id="@+id/showPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show points"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
+
+
+</RelativeLayout>
+
+

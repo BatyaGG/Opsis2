@@ -1,0 +1,26 @@
+#ifndef MACROS_H_
+#define MACROS_H_
+
+#define PI 3.14159265
+
+
+// Namespace for this project
+namespace FEA
+{
+	// Types of results that functions can return
+	enum RESULT {
+		OK = 0,
+		CONFIG_FILE_ERROR,
+		FACE_LANDMARK_MODEL_NOT_INITIALIZED,
+		EXPRESSION_MODULE_NOT_INITIALIZED,
+		FACE_DETECTOR_MODEL_NOT_INITIALIZED,
+		INVALID_INPUT,
+		CALCULATION_ERROR,
+		NO_FACE,
+		INVALID_IMAGE,
+		CONFIDENCE_SCORE_LOW,
+		LICENSE_ERROR
+	};	
+}
+
+#endif
