@@ -7,7 +7,7 @@ cmake_minimum_required(VERSION 3.4.1)
 
 add_definitions(-DVL_DISABLE_SSE2 -DVL_DISABLE_AVX)
 
-include_directories(C:/OpenCV-android-sdk/sdk/native/jni/include C:/vlfeat-0.9.20)
+include_directories(C:/OpenCV-android-sdk/sdk/native/jni/include)
 add_library( lib_opencv SHARED IMPORTED )
 set_target_properties(lib_opencv PROPERTIES IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/src/main/jniLibs/${ANDROID_ABI}/libopencv_java3.so)
 

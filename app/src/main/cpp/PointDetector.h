@@ -18,8 +18,8 @@
 
 
 extern "C" {
-#include <vl/generic.h>
-#include <vl/hog.h>
+#include "vl/generic.h"
+#include "vl/hog.h"
 }
 
 namespace FEA
